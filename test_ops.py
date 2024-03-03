@@ -1,10 +1,4 @@
-# Example test_ops.py
-import unittest
-from ops import add  # Assume this is a function you want to test
+from ops import add
 
-class TestOps(unittest.TestCase):
-    def test_add(self):
-        self.assertEqual(add(1, 2), 3)
-
-if __name__ == '__main__':
-    unittest.main()
+def test_add():
+    assert add(2, 3) == 5
